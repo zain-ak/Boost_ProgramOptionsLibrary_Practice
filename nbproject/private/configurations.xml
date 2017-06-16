@@ -27,8 +27,9 @@
           <runcommandpicklistitem>"${OUTPUT_PATH}" --help</runcommandpicklistitem>
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
           <runcommandpicklistitem>"${OUTPUT_PATH}" --info</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" --filename zain.txt</runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>"${OUTPUT_PATH}" --info</runcommand>
+        <runcommand>"${OUTPUT_PATH}" --filename zain.txt</runcommand>
         <rundir></rundir>
         <buildfirst>true</buildfirst>
         <terminal-type>0</terminal-type>
