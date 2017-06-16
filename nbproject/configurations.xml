@@ -45,7 +45,7 @@
           <linkerAddLib>
             <pElem>/usr/local/boost-1.64.0/lib</pElem>
           </linkerAddLib>
-          <commandLine>-lboost_system -lboost_filesystem</commandLine>
+          <commandLine>-lboost_system -lboost_filesystem -lboost_program_options</commandLine>
         </linkerTool>
       </compileType>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">

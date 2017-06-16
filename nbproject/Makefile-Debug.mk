@@ -60,7 +60,7 @@ LDLIBSOPTIONS=-L/usr/local/boost-1.64.0/lib
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/boost_programoptionslibrary_practice: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/boost_programoptionslibrary_practice ${OBJECTFILES} ${LDLIBSOPTIONS} -lboost_system -lboost_filesystem
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/boost_programoptionslibrary_practice ${OBJECTFILES} ${LDLIBSOPTIONS} -lboost_system -lboost_filesystem -lboost_program_options
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
