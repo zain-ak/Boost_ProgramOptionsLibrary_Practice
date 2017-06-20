@@ -25,11 +25,17 @@
       <runprofile version="9">
         <runcommandpicklist>
           <runcommandpicklistitem>"${OUTPUT_PATH}" --help</runcommandpicklistitem>
-          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
           <runcommandpicklistitem>"${OUTPUT_PATH}" --info</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -S 707</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -inttest 707</runcommandpicklistitem>
           <runcommandpicklistitem>"${OUTPUT_PATH}" --filename zain.txt</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -F zain.txt</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -F zain.txt --inttest 707</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -F zain.txt --inttest 707 -M a.txt b.txt song.mp3</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" a.txt b.txt song.mp3 -F zain.txt --inttest 707 </runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>"${OUTPUT_PATH}" --filename zain.txt</runcommand>
+        <runcommand>"${OUTPUT_PATH}" a.txt b.txt song.mp3 -F zain.txt --inttest 707</runcommand>
         <rundir></rundir>
         <buildfirst>true</buildfirst>
         <terminal-type>0</terminal-type>
